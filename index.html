@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <script defer src="./script.js"></script>
+    <title>Maptify</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="status"></div>
+      <div class="spiner"></div>
+      <div class="top">
+        <p>IP Address Tracker</p>
+
+        <div class="search-box">
+          <input
+            type="text"
+            class="search-input"
+            id="search-input"
+            placeholder="Search for any IP address or Domain"
+          />
+          <!-- <input type="text" class="i" /> -->
+
+          <button class="search-btn btn">></button>
+        </div>
+
+        <div class="details">
+          <div class="detail ip">
+            <div class="d-header">IP ADDRESS</div>
+            <div class="content ip-content"></div>
+          </div>
+          <div class="detail location">
+            <div class="d-header">LOCATION</div>
+            <div class="content location-content"></div>
+          </div>
+          <div class="detail timezone">
+            <div class="d-header">TIMEZONE</div>
+            <div class="content timezone-content"></div>
+          </div>
+          <div class="detail isp">
+            <div class="d-header">ISP</div>
+            <div class="content isp-content"></div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom map" id="map"></div>
+    </div>
+  </body>
+</html>
