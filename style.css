@@ -186,6 +186,7 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     opacity: 0;
+    z-index: 120;
   }
 
   @keyframes spin {
