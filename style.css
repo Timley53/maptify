@@ -251,7 +251,7 @@ body {
   .details {
     width: 50%;
     position: absolute;
-    bottom: -12rem;
+    bottom: -13rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -285,7 +285,7 @@ body {
     text-align: center;
   }
   .content {
-    height: 20px;
+    height: 30px;
     font-size: medium;
     font-weight: 500;
   }

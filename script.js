@@ -42,12 +42,21 @@ let map;
 let tryIP;
 let checklist = [".com", ".org", ".xyz"];
 
-/*
 navigator.geolocation.getCurrentPosition((position) => {
   console.log(position);
 
   let { latitude: lat, longitude: lng } = position.coords;
 
+  //////
+  //////////
+  ApiStatus.classList.remove("show-status");
+  ApiStatus.textContent = `Success ✅`;
+  ApiStatus.style.backgroundColor = "green";
+  checkIp();
+
+  ////
+  ///////
+  /////
   console.log(lat, lng);
   map = L.map("map").setView([lat, lng], 13);
   //   .locate({ setView: true, maxZoom: 8 });
@@ -57,14 +66,14 @@ navigator.geolocation.getCurrentPosition((position) => {
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
 });
-*/
-map = L.map("map").setView([51.503, -0.09], 13);
+
+// map = L.map("map").setView([51.503, -0.09], 13);
 //   .locate({ setView: true, maxZoom: 8 });
 
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-}).addTo(map);
+// L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+//   attribution:
+//     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+// }).addTo(map);
 //
 // console.log(map);
 Searchbtn.addEventListener("click", function () {
